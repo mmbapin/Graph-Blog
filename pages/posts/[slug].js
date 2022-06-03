@@ -53,7 +53,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}){
     console.log("Params:", params);
   const slug = params.slug;
-
   const data = await graphcms.request(QUERY, {slug});
   const post = data.post
   return{
