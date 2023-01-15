@@ -6,7 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
 }
 
@@ -117,4 +122,117 @@ a {
   .footer__pcvisible {
     display: none;
   }
+}
+
+/* Service */
+/* .service {
+  background: linear-gradient(180deg, #f9f5ff 0%, #f8f8f8 100%);
+} */
+
+/* .service__card__inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.service__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.service__card__image {
+  display: block;
+  width: 100%;
+}
+.service__card__flexible {
+  flex-grow: 1;
+} */
+
+.service__card__inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.service__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px 8px 0px 0px;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service__card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
+}
+
+.service__card__flexible {
+  flex-grow: 1;
+}
+
+.service__card__image {
+  display: block;
+  width: 100%;
+}
+
+.fintech__card__inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.fintech__card {
+  display: flex;
+  flex-direction: column;
+}
+.fintech__card__flexible {
+  flex-grow: 1;
+}
+
+.fintech__card__image {
+  display: block;
+  width: 100%;
+  transform: translateY(0px);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fintech__card__image:hover {
+  transform: translateY(-20px);
+}
+
+.launchpayment__gridwrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 154px;
+}
+
+@media (max-width: 600px) {
+  .launchpayment__gridwrap {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+
+  .launchpayment__imgwrp {
+    margin-top: 40px;
+    padding-left: 70px;
+  }
+}
+
+.launch__image {
+  width: 100%;
+}
+
+.launchpayment__item {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.launchpayment__item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.launchpayment__leftitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
